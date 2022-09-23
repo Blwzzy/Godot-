@@ -28,7 +28,7 @@ func _ready():
 			box[i][j].resize(size_z)
 			for k in range(size_z):
 				if Mask == null or Mask[i][j] == 1:
-					box[i][j][k] = add_tile(i,j,k,get_parent().distribute_face())
+					box[i][j][k] = add_tile(i,j,k,get_parent().redistribute_face())
 				else:
 					box[i][j][k] = null
 	

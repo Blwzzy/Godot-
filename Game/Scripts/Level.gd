@@ -34,11 +34,13 @@ func _ready():
 	add_to_group("game")
 	$CounterLabel.text = String(tiles.size())
 	
-func distribute_face() -> int:
-	var face = -1
-	if tiles.size() > 0:
-		face = tiles.pop_front()
-	return face
+
+#func distribute_face() -> int:
+#	var face = -1
+#	if tiles.size() > 0:
+#		face = tiles.pop_front()
+#	return face
+
 
 var tiles_index = -1
 
